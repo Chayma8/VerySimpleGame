@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>App</title>
+        <script type="text/javascript" src="app.js">
+        </script>
+        <style type="text/css">
+            section {
+                position: relative;
+                height: 600px;
+                width: 505px;
+                border-color: black;
+                border-style: solid;
+            }
+    
+            #area {
+                height: 500px;
+                width: 500px;
+                border-color: red;
+                border-style: solid;
+            }
+    
+            #obj {
+                height: 30px;
+                width: 30px;
+                background: green;
+                border-radius: 30px;
+                position: absolute;			
+            }
+    
+            .btns {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+    
+    
+        </style>
+    
+    </head>
+    <body>
+        <main>
+            <section>
+                <div id="area">
+                    <div id="obj"></div>
+                </div>
+                <div class="btns">
+                    <button id="oben" onclick="move(this)">Oben</button>
+                </div>
+                <div class="btns">
+                    <button id="links" onclick="move(this)">links</button>
+                    <button id="unten" onclick="move(this)">unten</button>
+                    <button id="rechts" onclick="move(this)">rechts</button>
+                </div>
+    
+    
+            </section>
+        </main>
+    </body>
+    </html>
